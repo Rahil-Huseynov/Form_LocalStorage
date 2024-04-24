@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="allcontainer">
+        <div class="container">
+
+            <div class="task">
+
+                <form id="formId" action="">
+
+                    <div class="task_div">
+
+                        <span class="span">Task Name:</span>
+
+                        <textarea class="text_area" name="taskName" id="nameinput" cols="10" rows="3"></textarea>
+
+                        <span>Task description:</span>
+
+                        <textarea class="text_area" name="taskDescription" id="descriptioninput" cols="30"
+                            rows="10"></textarea>
+
+                    </div>
+
+                    <div class="button_container">
+
+                        <div class="addbutton_container" id="button">
+
+                            <button id="button1">Add</button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <div id="buttonelement">
+                    <div class="button" id="button">
+
+                        <button id="button2">Filter</button>
+
+                    </div>
+
+
+                    <div class="button" id="button">
+
+                        <button id="button3">Delete all task</button>
+
+                    </div>
+
+                </div>
+
+                <div class="button" id="button">
+
+                    <button id="save">Save</button>
+
+                </div>
+
+                <div class="button" id="button">
+
+                    <button id="cancel">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="items_container">
+            <div class="div_items_container">
+
+                <div id="div_items_containerID" class="div_item">
+                    <p style="padding-bottom: 1rem; color: rgb(204, 217, 255)
+                ; font-size: 2rem; font-weight: 800;">Task List:</p>
+                    <div>
+
+                        <div id="taskContainer"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
