@@ -16,6 +16,7 @@ const input = document.getElementById('nameinput')
 
 const input1 = document.getElementById('descriptioninput')
 
+const buttonshowtask = document.getElementById('buttonshowtask')
 
 let objtask = {};
 
@@ -326,11 +327,13 @@ const savetask = (id) => {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+buttonshowtask.addEventListener('click', () => {
     
     const savedTasks = localStorage.getItem('tasks');
    
+    
     if (savedTasks) {
+        document.getElementById('items_container').style.display = 'block'
         tasks = JSON.parse(savedTasks);
         listTasks();
     }

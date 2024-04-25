@@ -114,11 +114,10 @@ span {
   gap: 6rem;
 }
 
-
-.addbutton_container {
-  display: flex;
-  justify-content: center;
+#buttonshowtask{
+  margin-top: 1rem;
 }
+
 
 /* (inputun hərəki) */
 
