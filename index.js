@@ -42,7 +42,7 @@ form.addEventListener('submit', (e) => {
     formValues.isComplete = false;
 
     tasks.push(formValues);
-    saveTasksToLocalStorage()
+    saveTaskLocalStorage()
     listTasks();
 });
 
@@ -240,7 +240,8 @@ const canceltask = () =>{
 const removeFunc = (id) => {
 
     tasks = tasks.filter(task => task.id !== id);
-
+    localStorage.removeItem('tasks')
+    saveTaskLocalStorage()
     listTasks();
 
 };
@@ -321,7 +322,7 @@ const savetask = (id) => {
         tasks[savetaskelement].taskDescription = input1.value;
 
         listTasks();
-        saveTasksToLocalStorage()
+        saveTaskLocalStorage()
     }
 }
 
@@ -337,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const saveTasksToLocalStorage = () => {
+const saveTaskLocalStorage = () => {
     
     localStorage.setItem('tasks', JSON.stringify(tasks));
 
