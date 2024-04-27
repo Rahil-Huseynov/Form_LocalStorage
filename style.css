@@ -105,7 +105,7 @@ span {
 }
 
 #items_container {
-  display: none;
+  display: block;
 }
 
 #buttonelement {

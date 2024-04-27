@@ -258,21 +258,6 @@ const completeTask = (id) => {
     }
 };
 
-document.getElementById('button1').addEventListener('click', function () {
-
-    if (document.getElementById('items_container').style.display == 'none') {
-
-        document.getElementById('items_container').style.display = 'block';
-
-    }
-
-    else {
-
-        document.getElementById('items_container').style.display = 'block';
-
-    }
-})
-
 
 const filterTask = () => {
 
@@ -327,11 +312,10 @@ const savetask = (id) => {
     }
 }
 
-buttonshowtask.addEventListener('click', () => {
+window.addEventListener('DOMContentLoaded', () => {
     
     const savedTasks = localStorage.getItem('tasks');
    
-    
     if (savedTasks) {
         document.getElementById('items_container').style.display = 'block'
         tasks = JSON.parse(savedTasks);
