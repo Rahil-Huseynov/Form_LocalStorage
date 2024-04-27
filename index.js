@@ -230,7 +230,7 @@ const canceltask = () =>{
 
     buttonelement.style.display = 'grid'
 
-    button1.style.display = 'block'
+    button1.style.display = 'inline-block'
 
     save.style.display = 'none'
 
@@ -291,7 +291,7 @@ const edittask = (task) => {
 const savetask = (id) => {
     filter_button.style.display = 'block';
 
-    button1.style.display = 'block';
+    button1.style.display = 'inline-block';
 
     save.style.display = 'none';
 
@@ -321,6 +321,10 @@ window.addEventListener('DOMContentLoaded', () => {
         tasks = JSON.parse(savedTasks);
         listTasks();
     }
+    else{
+        document.getElementById('items_container').style.display = 'none'
+
+    }
 
 });
 
@@ -336,3 +340,8 @@ const deletealltasks = () =>{
  localStorage.clear();
  window.location.reload()
 }
+
+button1.addEventListener('click', () =>{
+    window.location.reload()
+  
+})

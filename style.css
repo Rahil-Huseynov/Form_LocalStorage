@@ -104,9 +104,7 @@ span {
   font-size: 2rem;
 }
 
-#items_container {
-  display: block;
-}
+
 
 #buttonelement {
   display: grid;
